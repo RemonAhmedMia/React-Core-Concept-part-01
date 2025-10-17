@@ -9,6 +9,8 @@ function App() {
     <Player name = 'Tamim Iqbal' runs= '5000'></Player>
     <Player name = 'Shakib Al-Hasan' runs= '6000'></Player>
     <PlayerOne name={'Rimo'} runs={'98456986'}></PlayerOne>
+    <Salami event="Rujar Eid" amount={"3000"}></Salami>
+    <Salami event="Graduation" amount={"6000"}></Salami>
     </>
   )
 }
@@ -29,6 +31,16 @@ function PlayerOne({name,runs}){
     <div>
       <h2>Name: {name}</h2>
       <p>Runs: {runs}</p>
+    </div>
+  )
+}
+
+function Salami ({event,amount =0}){
+  //amount 0 karon amount er value na dile amra default value dite pari
+  return(
+    <div>
+      <h3>Salami For: {event}</h3>
+      <p>Anount: {amount}</p>
     </div>
   )
 }
